@@ -27,3 +27,31 @@ $project-seven-font-colors:#fff;
     padding-top:15px;
   }
 }
+
+@media (min-width: 1024px) {
+  .project-seven{
+    display:flex;
+    background-color: $project-seven-bg-color;
+    flex-direction: column;
+    height: calc(100vh);
+    color:$project-seven-font-colors;
+    font-family:$project-seven-font ;
+
+    &__img{
+      padding-top:20px
+    }
+
+    &__img a img{
+      width: 600px;
+      height:500px;
+      border-radius: 20px;
+      display: block;
+      margin: auto;
+    }
+
+    &__description{
+      text-align: center;
+      padding-top:15px;
+    }
+  }
+}
