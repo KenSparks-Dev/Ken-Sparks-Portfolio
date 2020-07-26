@@ -16,7 +16,7 @@ body{
   background:$lp-bg-color;
   height:400px;
   color:$lp-title-color;
-
+  
   &__text{
     margin:auto;
     font-family: $marker-font;
@@ -24,6 +24,12 @@ body{
   }
   &__text__title{
     font-size:3em;
+  }
+
+  a{
+    display:none;
+    text-decoration: none;
+    color:$lp-title-color
   }
 
   &__contact{

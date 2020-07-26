@@ -25,6 +25,12 @@ body {
   font-size: 3em;
 }
 
+.landing-page a {
+  display: none;
+  text-decoration: none;
+  color: #fff;
+}
+
 .landing-page__contact {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
