@@ -2,10 +2,39 @@ $client-bg-color:#000;
 $client-title-color:#fff;
 $client-font: 'Permanent Marker', cursive;
 
+
+body{
+  height:100%;
+  scroll-snap-type: y mandatory;
+  overflow-y:scroll;
+}
+
 .clientprojects{
   background-color: $client-bg-color;
   color:$client-title-color;
   font-family: $client-font;
   text-align:center;
   font-size:1.2em;
+}
+
+@media (min-width: 1024px) {
+body{
+  height:100%;
+  scroll-snap-type: y mandatory;
+  overflow-y:scroll;
+}
+
+section{
+  scroll-snap-align: start;
+  height:calc(100vh);
+}
+
+.clientprojects{
+  background-color: $client-bg-color;
+  color:$client-title-color;
+  font-family: $client-font;
+  text-align:center;
+  font-size:1.2em;
+}
+
 }

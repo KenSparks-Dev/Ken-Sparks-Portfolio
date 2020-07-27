@@ -7,11 +7,9 @@ $marker-font: 'Permanent Marker', cursive;
   margin:0
 }
 
-body{
-  height:100%;
-}
 
 .landing-page{
+  scroll-snap-align: start;
   display:flex;
   background:$lp-bg-color;
   height:400px;

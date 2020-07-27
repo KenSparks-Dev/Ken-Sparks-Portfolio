@@ -1,8 +1,35 @@
+body {
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
 .clientprojects {
   background-color: #000;
   color: #fff;
   font-family: "Permanent Marker", cursive;
   text-align: center;
   font-size: 1.2em;
+}
+
+@media (min-width: 1024px) {
+  body {
+    height: 100%;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  section {
+    scroll-snap-align: start;
+    height: calc(100vh);
+  }
+  .clientprojects {
+    background-color: #000;
+    color: #fff;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
