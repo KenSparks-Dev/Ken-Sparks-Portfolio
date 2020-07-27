@@ -3,11 +3,8 @@
   margin: 0;
 }
 
-body {
-  height: 100%;
-}
-
 .landing-page {
+  scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,11 +22,23 @@ body {
   font-size: 3em;
 }
 
+.landing-page a {
+  display: none;
+  text-decoration: none;
+  color: #fff;
+}
+
 .landing-page__contact {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .landing-page {
+    height: calc(100vh);
+  }
 }
 /*# sourceMappingURL=landing-page.css.map */

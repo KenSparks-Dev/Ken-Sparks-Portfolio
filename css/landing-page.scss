@@ -7,16 +7,14 @@ $marker-font: 'Permanent Marker', cursive;
   margin:0
 }
 
-body{
-  height:100%;
-}
 
 .landing-page{
+  scroll-snap-align: start;
   display:flex;
   background:$lp-bg-color;
   height:400px;
   color:$lp-title-color;
-
+  
   &__text{
     margin:auto;
     font-family: $marker-font;
@@ -26,8 +24,20 @@ body{
     font-size:3em;
   }
 
+  a{
+    display:none;
+    text-decoration: none;
+    color:$lp-title-color
+  }
+
   &__contact{
     flex-direction: row;
     position: absolute;
+  }
+}
+
+@media (min-width: 1024px) {
+  .landing-page{
+    height:calc(100vh)
   }
 }

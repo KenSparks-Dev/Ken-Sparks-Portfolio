@@ -27,3 +27,37 @@ $project-six-font-colors:#333333;
     padding-top:15px;
   }
 }
+
+@media (min-width: 1024px) {
+  .project-six{
+    display:flex;
+    flex-direction: row-reverse;
+    background-color: $project-six-bg-color;
+    height: calc(100vh);
+    color: $project-six-font-colors;
+    font-family: $project-six-font;
+
+    &__img{
+      flex:2;
+      padding-top:20px;
+      margin-top:30px;
+    }
+
+    &__img a img{
+      width: 600px;
+      height:500px;
+      border-radius: 20px;
+      display: block;
+      margin: auto;
+    }
+
+    &__description{
+      text-align: inherit;
+      padding-top:15px;
+    }
+
+    &__skills-list{
+      list-style: none;
+    }
+  }
+}
