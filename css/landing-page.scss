@@ -1,6 +1,6 @@
 $lp-bg-color: #000;
 $lp-title-color: #fff;
-$marker-font:  'Permanent Marker', cursive;
+$landing-font:  'Permanent Marker', cursive;
 
 * {
   padding: 0;
@@ -60,27 +60,6 @@ body  {
     color: #fff;
     border-radius:  20px;
     padding: 2px;
-  }
-}
-
-@media(min-width:  768px)  {
-  .landing-page {
-    height: 700px;
-
-    &__text {
-      padding-top: 500px;
-      text-shadow:  4px 2px black;
-    }
-
-    &__text__title  {
-      font-size: 4.5em;
-      text-shadow:  6px 4px black;
-
-    }
-    &_text__subtitle  {
-      font-size: 1.6em;
-      text-shadow:  2px 5px black;
-    }
   }
 }
 
